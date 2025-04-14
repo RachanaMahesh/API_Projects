@@ -20,7 +20,8 @@ import re._compiler
 #     print(count)
 
 # -------------------------------------- PART 3: loop through all the vedios within the playlist ---------------------------------------------
-# for 'title': 'Pandas Tutorials' and 'id': 'PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS'
+# for 'title': 'Pandas Tutorials' and 'id': ''
+api_key = os.environ.get('yt_api-key')
 youtube = build('youtube','v3',developerKey=api_key)
 
 hours_pattern = re.compile(r'(\d+)H')

@@ -8,7 +8,7 @@ import re._compiler
 
 api_key = os.environ.get('yt_api-key')
 print(api_key)
--------------------------------------- PART 1 --------------------------------------------
+#-------------------------------------- PART 1 --------------------------------------------
 youtube = build('youtube','v3',developerKey=api_key)
 request = youtube.channels().list(
     part = 'statistics',
